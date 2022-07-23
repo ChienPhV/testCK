@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.wrapper {
+  width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  background-color: rgb(10, 10, 41);
+  padding: 50px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 30px 0;
+  font-size: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: lightblue;
+}
+
+a {
+  color: inherit;
+}
+
+form {
+  margin: 100px 100px;
+  padding: 40px;
+  width: 100%;
+  max-width: 550px;
+  background-color: white;
+}
+
+input {
+  margin: 0 15px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  outline: none;
+}
+
+input[type=submit] {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(10, 10, 27);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
+  font-weight: 200;
+  font-size: 54px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.btt {
+  margin: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btt:focus {     
+  background-color:yellow;
+}
+
+.span {
+  background-image: linear-gradient(135deg, rgb(203, 126, 19), rgb(233, 94, 79));
 }
